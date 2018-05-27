@@ -5,10 +5,11 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
+import com.example.jokelibrary.MyJoke;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
 
 
 /**
@@ -30,8 +31,11 @@ public class MainActivityFragment extends Fragment {
         // "Use AdRequest.Builder.addTestDevice("ABCDEF012345") to get test ads on this device."
         AdRequest adRequest = new AdRequest.Builder()
                 .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .addTestDevice("29F55FC90DFC39989F990198B0A313C1")
                 .build();
         mAdView.loadAd(adRequest);
         return root;
     }
+
+
 }
