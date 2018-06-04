@@ -9,16 +9,11 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivityFragment">
 
-    <TextView
-        android:id="@+id/instructions_text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/instructions" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/instructions_text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:onClick="tellJoke"
         android:text="@string/button_text" />
 

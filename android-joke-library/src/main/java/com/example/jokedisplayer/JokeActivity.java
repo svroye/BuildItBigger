@@ -10,9 +10,11 @@ public class JokeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_joke);
 
-        JokeFragment jokeFragment = new JokeFragment();
-        getSupportFragmentManager().beginTransaction()
-                .add(R.id.joke_fragment, jokeFragment)
-                .commit();
+        if (savedInstanceState != null) {
+            JokeFragment jokeFragment = new JokeFragment();
+            getSupportFragmentManager().beginTransaction()
+                    .add(R.id.joke_fragment, jokeFragment)
+                    .commit();
+        }
     }
 }

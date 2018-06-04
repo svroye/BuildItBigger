@@ -2,14 +2,17 @@ package com.example.jokelibrary;
 
 
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import sun.rmi.runtime.Log;
 
 public class MyJoke {
 
-    private ArrayList<String> jokes = new ArrayList<>();
+    public ArrayList<String> jokes = new ArrayList<>();
     private int counter;
 
     public MyJoke() {
-        this.counter = 0;
         this.jokes.add("Why haven't you ever seen any elephants hiding up trees? " +
                 "Because they're really, really good at it.");
         this.jokes.add("We have a strange custom in our office. The food has names there. Yesterday for example " +
@@ -25,12 +28,8 @@ public class MyJoke {
 
 
     public String getJoke(){
-        if (!(counter < jokes.size())){
-            counter = 0;
-        }
-        return jokes.get(counter++);
+        int index = (int) (Math.random()*jokes.size());
+        return jokes.get(index);
     }
-
-
 
 }
