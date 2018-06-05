@@ -20,3 +20,11 @@ allprojects {
         google()
     }
 }
+
+task TestTask {
+    dependsOn ':backend:appengineStart'
+    finalizedBy ':backend:appengineStop'
+    doLast {
+        println "Hello"
+    }
+}
