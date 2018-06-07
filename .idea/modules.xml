@@ -3,8 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BuildItBigger.iml" filepath="$PROJECT_DIR$/BuildItBigger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-joke-library/android-joke-library.iml" filepath="$PROJECT_DIR$/android-joke-library/android-joke-library.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/backend/backend.iml" filepath="$PROJECT_DIR$/backend/backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-joke-library/java-joke-library.iml" filepath="$PROJECT_DIR$/java-joke-library/java-joke-library.iml" />
+      <module fileurl="file://C:\Users\Steven\AndroidStudioProjects\BuildItBigger\android-joke-library\jokedisplayer.iml" filepath="C:\Users\Steven\AndroidStudioProjects\BuildItBigger\android-joke-library\jokedisplayer.iml" />
+      <module fileurl="file://C:\Users\Steven\AndroidStudioProjects\BuildItBigger\java-joke-library\jokelibrary.iml" filepath="C:\Users\Steven\AndroidStudioProjects\BuildItBigger\java-joke-library\jokelibrary.iml" />
     </modules>
   </component>
 </project>
