@@ -25,7 +25,6 @@ public class JokeFragment extends Fragment {
 
         if (intent.hasExtra("joke")) {
             jokeTv.setText(intent.getStringExtra("joke"));
-
         }
         return rootView;
     }

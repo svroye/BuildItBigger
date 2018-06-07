@@ -21,10 +21,11 @@ allprojects {
     }
 }
 
-task TestTask {
+task runTests {
+    description "Start the server, run the tests and stop the server"
     dependsOn ':backend:appengineStart'
+    dependsOn ':app:connectedAndroidTest'
     finalizedBy ':backend:appengineStop'
-    doLast {
-        println "Hello"
-    }
+    tasks.getByPath('app:connectedAndroidTest').mustRunAfter ':backend:appengineStart'
+
 }
